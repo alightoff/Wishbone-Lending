@@ -32,6 +32,16 @@ body {
   margin: 0 auto;
 }
 
+/* ==================================== */
+/* 2. Доступность */
+/* ==================================== */
+
+a:focus,
+button:focus {
+  outline: 3px solid #ffcc00;
+  outline-offset: 2px;
+}
+
 
 
 /* ==================================== */
@@ -64,12 +74,12 @@ body {
   padding: 10px 0 20px;
 }
 
-.author-avatar {
+.author__avatar {
   width: 84px;
   height: 84px;
 }
 
-.author-details {
+.author__details {
   display: flex;
   flex-direction: column;
 
@@ -78,13 +88,13 @@ body {
   line-height: 18px;
 }
 
-.author-name {
+.author__name {
   font-size: 17px;
 
   color: var(--main-title-color);
 }
 
-.author-position {
+.author__position {
   font-size: 14px;
 
   color: var(--second-main-color);
@@ -182,7 +192,7 @@ body {
 
 
 /* ==================================== */
-/* 4. Hero Section */
+/* 3. Hero Section */
 /* ==================================== */
 
 
@@ -237,7 +247,7 @@ body {
 
 
 /* ==================================== */
-/* 5. Statment Section */
+/* 4. Statment Section */
 /* ==================================== */
 
 
@@ -273,7 +283,7 @@ body {
 
 
 /* ==================================== */
-/* 6. Process Section */
+/* 5. Process Section */
 /* ==================================== */
 
 .process {
@@ -346,7 +356,7 @@ body {
 
 
 /* ==================================== */
-/* 7. Customers Section */
+/* 6. Customers Section */
 /* ==================================== */
 
 
@@ -414,7 +424,7 @@ body {
 
 
 /* ==================================== */
-/* 8. Projects Section */
+/* 7. Projects Section */
 /* ==================================== */
 
 .projects {
@@ -482,7 +492,7 @@ body {
 
 
 /* ==================================== */
-/* 9. Team Section */
+/* 8. Team Section */
 /* ==================================== */
 
 .team {
@@ -530,7 +540,7 @@ body {
 
 
 /* ==================================== */
-/* 10. Get Section */
+/* 9. Get Section */
 /* ==================================== */
 
 .get {
@@ -571,7 +581,7 @@ body {
 
 
 /* ==================================== */
-/* 11. Footer Section */
+/* 10. Footer Section */
 /* ==================================== */
 
 .footer {

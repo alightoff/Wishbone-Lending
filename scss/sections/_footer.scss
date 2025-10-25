@@ -1,0 +1,20 @@
+@use '../abstract/' as *;
+
+.footer {
+  @include flex-conf($jc: space-between);
+
+  padding: 60px 136px;
+
+  &__text-content {
+    @include flex-conf($fd: column, $g: 20px);
+  }
+
+  &__description {
+    @include text-formatter(14px, 20px, normal, $c: var(--second-main-color));
+  }
+
+  &__links {
+    @include flex-conf($g: 20px);
+    align-self: flex-end;
+  }
+}

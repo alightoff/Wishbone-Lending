@@ -1,0 +1,49 @@
+@use '../abstract/' as *;
+
+.projects {
+  @include flex-conf($fd: column);
+
+  padding: 120px 120px 60px;
+  background-color: #F7F7F7;
+
+  &__title {
+    @include text-formatter(39px, 42px, normal, $c: var(--main-title-color));
+  }
+
+  &__subtitle {
+    width: 581px;
+    padding: 15px 0 42px;
+
+    @include text-formatter(24px, 30px, $c: var(--second-main-color));
+  }
+
+  &__images {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__image {
+    display: block;
+    width: 379px;
+
+    &-block {
+      position: relative;
+    }
+  }
+
+  &--link {
+    position: absolute;
+    left: 45px;
+    bottom: 40px;
+    color: #fff;
+    background-color: #1B1A1A;
+    border-radius: 15px;
+  }
+
+  a.link {
+    display: block;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

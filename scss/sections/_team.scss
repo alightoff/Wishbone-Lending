@@ -1,0 +1,31 @@
+@use '../abstract/' as *;
+
+.team {
+  display: flex;
+
+  @include container;
+
+  padding: 100px 0;
+
+  &__text-content {
+    // @include flex-conf($fd: column);
+    width: 379px;
+  }
+
+  &__title {
+    @include text-formatter(32px, 38px, normal, $c: var(--main-descr-color));
+  }
+
+  &__description {
+    padding: 14px 0 30px;
+
+    @include text-formatter(15px, 24px, normal, $c: var(--second-main-color));
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 36px;
+    column-gap: 114px;
+  }
+}

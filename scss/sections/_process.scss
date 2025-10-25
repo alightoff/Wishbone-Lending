@@ -1,0 +1,47 @@
+@use '../abstract/' as *;
+
+.process {
+  @include flex-conf($fd: column, $ai: center, $g: 40px);
+
+  @include container;
+  padding: 100px 0;
+
+  &__titles {
+    @include flex-conf($fd: column, $ai: center, $g: 13px);
+  }
+
+  &__title-top {
+    @include text-formatter(14px, normal, normal, 2px, uppercase, var(--second-main-color));
+  }
+
+  &__title-bottom {
+    @include text-formatter(39px, 42px, normal);
+  }
+
+  &__steps {
+    @include flex-conf($g: 16px);
+  }
+
+  &__step {
+    @include flex-conf($fd: column, $ai: center);
+    text-align: center;
+
+    width: 378px;
+  }
+
+  &__step-icon {
+    @include size-same(117px);
+  }
+
+  &__step-title {
+    padding: 15px 0 10px;
+    
+    @include text-formatter($fz: 18px, $fw: normal, $c: var(--main-descr-color));
+  }
+
+  &__step-description {
+    width: 292px;
+
+    color: var(--second-main-color);
+  }
+}

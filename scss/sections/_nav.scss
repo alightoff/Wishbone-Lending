@@ -1,0 +1,28 @@
+@use '../abstract/' as *;
+
+.nav {
+  // @include flex-conf(center, center);
+
+  &__list {
+    display: flex;
+    gap: clamp(0.313rem, -0.301rem + 3.07vw, 2rem); /* min: 5px; max: 32px; vp min: 320px; max: 1200px */
+  }
+
+  &__link {
+    font-size: clamp(0.5rem, 0.341rem + 0.8vw, 0.938rem); /* min: 8px; max: 15px; vp min: 320px; max: 1200px */
+    
+    color: var(--main-title-color);
+
+    &--black {
+      padding: 11px 20px;
+
+      color: #fff;
+      background-color: #000;
+      border-radius: 12px;
+    }
+  }
+
+  &__burger {
+    display: none;
+  }
+}

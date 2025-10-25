@@ -1,0 +1,30 @@
+@use '../abstract/' as *;
+
+.hero {
+  @include flex-conf($jc: center, $ai: center);
+  background-color: #ECE7E4;
+
+  &__text {
+    @include flex-conf($fd: column, $jc: center, $g: 20px);
+
+    padding: 0 50px;
+  }
+
+  &__logo {
+    @include text-formatter(14px, normal, normal, 2px, uppercase, var(--second-main-color));
+  }
+
+  &__title {
+    @include text-formatter(64px, 69px, normal, $c: var(--main-title-color));
+  }
+
+  &__description {
+    max-width: 510px;
+
+    color: var(--main-descr-color);
+  }
+
+  &--link {
+    color: var(--main-title-color);
+  }
+}

@@ -1,0 +1,40 @@
+@use '../abstract/' as *;
+
+.customers {
+  background-color: var(--main-descr-color);
+
+  &__content {
+    @include flex-conf($jc: space-between, $ai: center);
+
+    @include container;
+    padding: 60px 136px;
+  }
+
+  &__text {
+    @include flex-conf($fd: column, $jc: center);
+
+    width: 460px;
+
+    &-kicker {
+      @include text-formatter(14px, 20px, normal, 2px, uppercase, #ECE7E4);
+    }
+
+    &-title {
+      @include text-formatter(32px, 38px, normal, $c: #fff);
+    }
+
+    &-description {
+      padding-top: 14px;
+      width: 451px;
+
+      @include text-formatter(15px, 24px, normal, $c: #ECE7E4);
+    }
+  }
+
+  &__logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 96px;
+    align-items: center;
+  }
+}

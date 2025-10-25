@@ -1,0 +1,39 @@
+.project {
+  position: relative;
+}
+
+.project__image {
+  display: block;
+}
+
+.project__text {
+  position: absolute;
+  top: 266px;
+  right: 75px;
+
+  width: 285px;
+}
+
+.project__title {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: var(--main-descr-color);
+}
+
+.project__subtitle {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+
+  color: var(--second-main-color);
+}
+
+/* ПРОЕКТ - МОДИФИКАЦИЯ */
+
+.project__text--left {
+  left: 60px;
+}

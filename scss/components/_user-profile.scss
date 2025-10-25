@@ -1,0 +1,32 @@
+.author {
+  display: flex;
+  align-items: center;
+
+  padding: 10px 0 20px;
+}
+
+.author__avatar {
+  width: 84px;
+  height: 84px;
+}
+
+.author__details {
+  display: flex;
+  flex-direction: column;
+
+  padding: 30px;
+
+  line-height: 18px;
+}
+
+.author__name {
+  font-size: 17px;
+
+  color: var(--main-title-color);
+}
+
+.author__position {
+  font-size: 14px;
+
+  color: var(--second-main-color);
+}

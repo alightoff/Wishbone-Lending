@@ -1,0 +1,23 @@
+@use '../abstract/' as *;
+
+.get {
+  @include flex-conf($jc: space-between, $ai: center);
+
+  padding: 100px 136px;
+
+  background-color: #CEC4BC;
+
+  &__text-content {
+    width: 578px;
+  }
+
+  &__kicker {
+    @include text-formatter(14px, 20px, normal, 2px, uppercase, var(--second-main-color));
+  }
+
+  &__title {
+    margin-top: -6px;
+
+    @include text-formatter(40px, 42px, normal, $c: var(--main-title-color));
+  }
+}

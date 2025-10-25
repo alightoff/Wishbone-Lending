@@ -1,0 +1,26 @@
+/* 1. ABSTRACTIONS (variables, mixins) */
+@use 'abstract/variables';
+@use 'abstract' as *;
+
+/* 2. BASE (resets, typography) */
+@use 'base/font';
+@use 'base/reset';
+@use 'base/body';
+
+/* 3. COMPONENTS (reusable blocks) */
+@use 'components/links';
+@use 'components/logo';
+@use 'components/project';
+@use 'components/user-profile';
+
+/* 4. SECTIONS (page-specific layout) */
+@use 'sections/header';
+@use 'sections/nav';
+@use 'sections/hero';
+@use 'sections/statment';
+@use 'sections/process';
+@use 'sections/customers';
+@use 'sections/projects';
+@use 'sections/team';
+@use 'sections/get';
+@use 'sections/footer';

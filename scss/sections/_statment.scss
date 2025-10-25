@@ -1,0 +1,23 @@
+@use '../abstract/' as *;
+
+.statement {
+  @include flex-conf($jc: space-between);
+
+  width: 770px;
+  margin: 0 auto;
+  padding: 100px 0;
+
+  &__title {
+    @include text-formatter(32px, $fw: normal, $c: var(--main-descr-color));
+  }
+
+  &__quote {
+    width: 493px;
+  }
+
+  &__description {
+    @include flex-conf($fd: column, $g: 10px);
+
+    color: var(--main-descr-color);
+  }
+}

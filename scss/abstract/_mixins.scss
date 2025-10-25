@@ -1,0 +1,26 @@
+@mixin flex-conf ($jc: start, $ai: start, $fd: row, $g: 0px) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  flex-direction: $fd;
+  gap: $g;
+}
+
+@mixin container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@mixin text-formatter($fz: 14px, $lh: normal, $fw: normal, $ls: 0, $tt: none, $c: #000) {
+  font-size: $fz;
+  line-height: $lh;
+  font-weight: $fw;
+  letter-spacing: $ls;
+  text-transform: $tt;
+  color: $c;
+}
+
+@mixin size-same($s) {
+  width: $s;
+  height: $s;
+}

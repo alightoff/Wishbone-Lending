@@ -1,0 +1,7 @@
+@use '../abstract/' as *;
+
+.header {
+  @include flex-conf($jc: space-around, $ai: center, $g: 10px);
+
+  height: 90px;
+}

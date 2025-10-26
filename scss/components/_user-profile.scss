@@ -1,18 +1,17 @@
+@use '../abstract/' as *;
+
 .author {
-  display: flex;
-  align-items: center;
+  @include flex-conf($ai: center);
 
   padding: 10px 0 20px;
 }
 
 .author__avatar {
-  width: 84px;
-  height: 84px;
+  @include size-same(84px);
 }
 
 .author__details {
-  display: flex;
-  flex-direction: column;
+  @include flex-conf($fd: column);
 
   padding: 30px;
 
@@ -20,13 +19,9 @@
 }
 
 .author__name {
-  font-size: 17px;
-
-  color: var(--main-title-color);
+  @include text-formatter($fz: 17px, $c: var(--main-title-color));
 }
 
 .author__position {
-  font-size: 14px;
-
-  color: var(--second-main-color);
+  @include text-formatter($fz: 14px, $c: var(--second-main-color));
 }

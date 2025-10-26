@@ -1,6 +1,7 @@
+@use '../abstract' as *;
+
 .logo {
-  font-weight: normal;
-  font-size: 24px;
+  @include text-formatter($fw: normal, $fz: 24px);
 }
 
 .logo > span {
